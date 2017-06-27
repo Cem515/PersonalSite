@@ -10,19 +10,19 @@
         $stateProvider
             .state('main', {
                 url: "/main",
-                templateUrl: "app/htmls/main.html"
+                templateUrl: "Site/htmls/main.html"
             })
             .state("about", {
                 url: "/aboutMe",
-                templateUrl: "app/htmls/about.html"
+                templateUrl: "Site/htmls/about.html"
             })
             .state("projects", {
                 url: "/projects",
-                templateUrl: "app/htmls/projects.html"
+                templateUrl: "Site/htmls/projects.html"
             })
             .state("contact", {
                 url: "/contactpage",
-                templateUrl: "app/htmls/contact.html"
+                templateUrl: "Site/htmls/contact.html"
             })
     });
 })();
