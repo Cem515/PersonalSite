@@ -1,21 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Gulp Demo</title>
+  <meta charset="UTF-8" ng-app="app">
+  <title>Collin McCoy</title>
 <!-- bower:css -->
 <!-- endbower -->
 
 <!-- inject:css -->
+<link rel="stylesheet" href="/app/styles.css">
 <!-- endinject -->
 </head>
 
 <body>
 <!-- bower:js -->
 <script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 <!-- endbower -->
-<h1>HEYA</h1>
+
+<body ng-controller="SwitchController as switchCtrl">
+  <div id="topbar">
+  <h1 id="MainTitle"> Welcome to My Site</h1>
+<div class="topnav" id="myTopnav">
+  <a ui-sref="main">Home</a>
+  <a ui-sref="about">About Me</a>
+  <a ui-sref="projects">Past Projects</a>
+  <a ui-sref="contact">Contact Me</a>
+</div>
+</div>
+<div class="well" ui-view></div>
+
+
+
 <!-- inject:js -->
+<script src="/app/app.js"></script>
+<script src="/app/switch.controller.js"></script>
 <!-- endinject -->
 </body>
 </html>
